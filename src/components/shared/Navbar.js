@@ -51,10 +51,10 @@ function Navbar() {
 
                         <Image width={100} height={100} src={logo} alt='Logo' />
 
-                        <Box className='w-full text-center'>
+                        <Box className='w-full text-center bg-black text-white'  >
                             {navItems.map((item) => (
-                                <Link key={item} href={item.pathName}>
-                                    <Button className='text-white'>
+                                <Link className='text-white' key={item} href={item.pathName}>
+                                    <Button className='text-white '>
                                         {item.route}
                                     </Button>
                                 </Link>
@@ -64,7 +64,7 @@ function Navbar() {
                         <Box>
                             <Stack direction='row' sx={{
                                 "& svg": {
-                                    color: 'white'
+                                    color: 'white',
                                 }
                             }} >
                                 <IconButton>

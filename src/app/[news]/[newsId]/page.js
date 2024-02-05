@@ -5,7 +5,7 @@ import { getSingleNews } from '@/utils/getSingleNews';
 
 const NewsDetailsPage = async ({ params }) => {
     const { data: news } = await getSingleNews(params.newsId);
-    console.log(news);
+    // console.log(news);
     return (
         <Box className="my-5">
             <Container>
@@ -36,9 +36,10 @@ const NewsDetailsPage = async ({ params }) => {
                             textAlign: 'justify',
                             whiteSpace: "pre-line",
                             margin: "10px 0px",
-                            color: 'grey'
+                            color: 'gray'
                         }} >Published: {news.details}</Typography>
-                        <Typography variant='h6' >``Many desktop publising packages and web pages``</Typography>
+                        <Typography variant='h6' >``Many desktop publishing packages and web pages editors now use as their default model text!``</Typography>
+                        <Typography variant='h6' >---Jhankar Mahbub Bhai</Typography>
                     </Grid>
                 </Grid>
             </Container>

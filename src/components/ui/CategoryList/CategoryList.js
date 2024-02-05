@@ -6,7 +6,7 @@ import React from 'react';
 const CategoryList = async () => {
 
     const { data } = await getAllCategories();
-    console.log(data);
+    // console.log(data);
     return (
         <Box className='mt-5 bg-gray-100 px-5 py-2'>
             <Typography variant='h6'> Category </Typography>
